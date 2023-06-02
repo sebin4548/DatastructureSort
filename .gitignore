@@ -1,5 +1,0 @@
-# 특정 파일 이름을 무시하도록 git-practice/secrets.yaml
-
-# wild card *.yaml 
-
-# sub folder에 대해서 logs/**/debug.log
