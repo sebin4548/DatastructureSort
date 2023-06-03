@@ -18,5 +18,6 @@ void BubbleSort(Student values[], int numValues){
         BubbleUp(values, current, numValues -1);
         current++;
     }
+    
 }
 

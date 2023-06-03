@@ -21,6 +21,7 @@ int Partition(Student values[], int first, int last){
     Swap(values[pivot], values[smallIndex]);
     return smallIndex;
 }
+/////
 
 void QuickSort(Student values[], int first, int last){
     int pivotIndex;
