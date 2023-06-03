@@ -2,7 +2,7 @@
 #include "Student.h"
 #include "Sort.h"
 #include "heap.cpp"
-
+#include "DepthFirstSearch.cpp"
 
 using namespace std;
 int main(){
@@ -33,7 +33,9 @@ int main(){
     catch(EmptyPq){
 
     }
-    
-   
-
+    GraphType<char> xx;
+    xx.add('A', 'D');
+    xx.add('D', 'f');
+    xx.add('f', 'H');
+    DepthFirstSearch(xx, 'A', 'H');
 }
