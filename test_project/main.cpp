@@ -14,6 +14,7 @@ int main(){
     stu[1].InitValue(1, y, 3.5);
     stu[2].InitValue(1, z, 3.5);
 //    InsertionSort(stu, 3);
+//    QuickSort(stu, 0, 3);
     BubbleSort(stu, 3);
     
     Print(cout, stu, 3);

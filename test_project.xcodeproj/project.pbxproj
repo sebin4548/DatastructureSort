@@ -37,7 +37,6 @@
 		52AC63C12A2A28BD000C6461 /* Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
 		52AC63C22A2A28BD000C6461 /* Student.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
 		52AC63C72A2A3421000C6461 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		52AC63C82A2A3421000C6461 /* main.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = main.hpp; sourceTree = "<group>"; };
 		52AC63CA2A2A3759000C6461 /* BubbleSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BubbleSort.cpp; sourceTree = "<group>"; };
 		52AC63CC2A2A57DF000C6461 /* InsertSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InsertSort.cpp; sourceTree = "<group>"; };
 		52AC63CE2A2A5E2E000C6461 /* HeapSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HeapSort.cpp; sourceTree = "<group>"; };
@@ -80,7 +79,6 @@
 				52AC63BD2A2A28BD000C6461 /* Student.h */,
 				52AC63BE2A2A28BD000C6461 /* Swap.cpp */,
 				52AC63C72A2A3421000C6461 /* main.cpp */,
-				52AC63C82A2A3421000C6461 /* main.hpp */,
 				52AC63BF2A2A28BD000C6461 /* SelectionSort.cpp */,
 				52AC63CA2A2A3759000C6461 /* BubbleSort.cpp */,
 				52AC63CE2A2A5E2E000C6461 /* HeapSort.cpp */,
