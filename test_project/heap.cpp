@@ -1,3 +1,5 @@
+#include<iostream>
+using namespace std;
 template <typename T>
 void Swap(T& a, T& b){
     T temp = a;
@@ -27,7 +29,10 @@ public:
                     maxChild = leftChild;
             }
             if(elements[root] < elements[maxChild]){
-                Swap(elements[root] < elements[maxChild]);
+                Swap(elements[root] , elements[maxChild]);
+                
+//                Swap(elements[root], elements[maxChild]);
+                
                 ReheapDown(maxChild, bottom);
             }
         }
@@ -36,8 +41,10 @@ public:
         int parent;
         if(bottom > root){
             parent = (bottom - 1)/2;
+            
             if(elements[parent] < elements[bottom]){
                 Swap(elements[parent], elements[bottom]);
+                
                 ReheapUp(root, parent);
             }
         }
@@ -60,16 +67,18 @@ public:
     PQType(int n){
         maxItems = n;
         numItems = 0;
-        items.elements = new T [n];
+        items.elements = new T[n];
     }
-    void Dequeue(T& item){
+//    void Dequeue(T& item){
+    T Dequeue(){
         if(numItems == 0)
             throw EmptyPq();
         else{
-            item = items.elements[0];
+            T temp = items.elements[0];
             items.elements[0] = items.elements[numItems -1];
             numItems--;
             items.ReheapDown(0, numItems -1);
+            return temp;
         }
     }
     void EnQueue(T newItem){
@@ -80,5 +89,6 @@ public:
             items.elements[numItems - 1] = newItem;
             items.ReheapUp(0, numItems -1);
         }
+//        cout<<items.elements[0];
     }
 };

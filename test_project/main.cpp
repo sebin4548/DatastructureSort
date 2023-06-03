@@ -3,22 +3,37 @@
 #include "Sort.h"
 #include "heap.cpp"
 
+
 using namespace std;
 int main(){
-    Student stu[3];
-    char *x = "abc";
-    char *y = "def";
-    char *z = "cc";
-    stu[0].InitValue(0, x, 4.0);
+    
+    try{
+//        Print(cout, stu, 3);
+    //     cout<<('a'<'b');
+        PQType<int> pq(10);
+        pq.EnQueue(10);
+        pq.EnQueue(0);
+        pq.EnQueue(15);
+        pq.EnQueue(20);
+        pq.EnQueue(30);
+        pq.EnQueue(320);
+        pq.EnQueue(3);
+        
+        pq.EnQueue(30);
+        pq.EnQueue(3200);
+        pq.EnQueue(3);
+        cout<<pq.Dequeue()<<endl;
+        cout<<pq.Dequeue()<<endl;
+        cout<<pq.Dequeue()<<endl;
+        cout<<pq.Dequeue();
+    }
+    catch(FullPq){
 
-    stu[1].InitValue(1, y, 3.5);
-    stu[2].InitValue(1, z, 3.5);
-//    InsertionSort(stu, 3);
-//    QuickSort(stu, 0, 3);
-    BubbleSort(stu, 3);
+    }
+    catch(EmptyPq){
+
+    }
     
-    Print(cout, stu, 3);
-//     cout<<('a'<'b');
-    
+   
 
 }
