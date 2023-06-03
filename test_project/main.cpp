@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Student.h"
 #include "Sort.h"
-
+#include "heap.cpp"
 
 using namespace std;
 int main(){
@@ -19,5 +19,6 @@ int main(){
     
     Print(cout, stu, 3);
 //     cout<<('a'<'b');
+    
 
 }
