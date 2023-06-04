@@ -1,39 +1,39 @@
-#pragma once
-#include <iostream>
-#include "Student.h"
-#include "Sort.h"
-void ReheapDown(Student values[], int root, int bottom){
+template<class ItemType>
+void Swap(ItemType &x, ItemType &y){
+    ItemType temp = x;
+    x = y;
+    y = temp;
+}
+
+template<class ItemType>
+void ReheapDown(ItemType values[], int root, int bottom){
     int maxChild;
     int rightChild;
     int leftChild;
     
-    leftChild = root * 2 + 1;
-    rightChild = root * 2 + 2;
-    
-    if(leftChild < bottom){
+    if(leftChild <= bottom){
         if(leftChild == bottom)
             maxChild = leftChild;
         else{
-            if(*values[leftChild].getName() <= *values[rightChild].getName())
-                maxChild = rightChild;
+            if(values[leftChild] <= values[rightChild])
+                maxChild =rightChild;
             else
                 maxChild = leftChild;
-            
-            }
-        if(*values[root].getName() <= *values[maxChild].getName()){
+        }
+        if(values[root] < values[maxChild]){
             Swap(values[root], values[maxChild]);
             ReheapDown(values, maxChild, bottom);
         }
     }
 }
 
-void HeapSort(Student values[], int numValues){
+template <class ItemType>
+void HeapSort(ItemType values[], int numValues){
     int index;
-    
-    for(index = numValues/2 -1; index >= 0; index--){
+    for(index = numValues / 2 -1; index >= 0; index--){
         ReheapDown(values, index, numValues - 1);
     }
-    for(index = numValues -1; index>= 1; index--){
+    for(index = numValues - 1; index >= 1; index --){
         Swap(values[0], values[index]);
         ReheapDown(values, 0, index - 1);
     }

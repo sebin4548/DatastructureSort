@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521A84612A2C3CAA00DD2EEA /* HeapSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 521A84602A2C3CAA00DD2EEA /* HeapSort.cpp */; };
 		52AC63C32A2A28BD000C6461 /* Swap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63BE2A2A28BD000C6461 /* Swap.cpp */; };
 		52AC63C42A2A28BD000C6461 /* SelectionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63BF2A2A28BD000C6461 /* SelectionSort.cpp */; };
 		52AC63C62A2A28BD000C6461 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63C22A2A28BD000C6461 /* Student.cpp */; };
 		52AC63C92A2A3421000C6461 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63C72A2A3421000C6461 /* main.cpp */; };
 		52AC63CB2A2A3759000C6461 /* BubbleSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63CA2A2A3759000C6461 /* BubbleSort.cpp */; };
 		52AC63CD2A2A57DF000C6461 /* InsertSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63CC2A2A57DF000C6461 /* InsertSort.cpp */; };
-		52AC63D02A2A5E2E000C6461 /* HeapSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63CE2A2A5E2E000C6461 /* HeapSort.cpp */; };
 		52AC63D22A2AED8F000C6461 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63D12A2AED8F000C6461 /* QuickSort.cpp */; };
 		52AC63D62A2B22E1000C6461 /* heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63D52A2B22E1000C6461 /* heap.cpp */; };
 		52AC63D82A2B3DB5000C6461 /* DepthFirstSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63D72A2B3DB5000C6461 /* DepthFirstSearch.cpp */; };
@@ -32,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		521A84602A2C3CAA00DD2EEA /* HeapSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HeapSort.cpp; sourceTree = "<group>"; };
 		525C0FAC28E95D8E0004FC45 /* test_project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test_project; sourceTree = BUILT_PRODUCTS_DIR; };
 		52AC63BD2A2A28BD000C6461 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		52AC63BE2A2A28BD000C6461 /* Swap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Swap.cpp; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		52AC63C72A2A3421000C6461 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		52AC63CA2A2A3759000C6461 /* BubbleSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BubbleSort.cpp; sourceTree = "<group>"; };
 		52AC63CC2A2A57DF000C6461 /* InsertSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InsertSort.cpp; sourceTree = "<group>"; };
-		52AC63CE2A2A5E2E000C6461 /* HeapSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HeapSort.cpp; sourceTree = "<group>"; };
 		52AC63D12A2AED8F000C6461 /* QuickSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
 		52AC63D52A2B22E1000C6461 /* heap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = heap.cpp; sourceTree = "<group>"; };
 		52AC63D72A2B3DB5000C6461 /* DepthFirstSearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DepthFirstSearch.cpp; sourceTree = "<group>"; };
@@ -85,10 +85,10 @@
 				52AC63C72A2A3421000C6461 /* main.cpp */,
 				52AC63BF2A2A28BD000C6461 /* SelectionSort.cpp */,
 				52AC63CA2A2A3759000C6461 /* BubbleSort.cpp */,
-				52AC63CE2A2A5E2E000C6461 /* HeapSort.cpp */,
 				52AC63D12A2AED8F000C6461 /* QuickSort.cpp */,
 				52AC63D52A2B22E1000C6461 /* heap.cpp */,
 				52AC63D72A2B3DB5000C6461 /* DepthFirstSearch.cpp */,
+				521A84602A2C3CAA00DD2EEA /* HeapSort.cpp */,
 			);
 			path = test_project;
 			sourceTree = "<group>";
@@ -150,7 +150,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52AC63D02A2A5E2E000C6461 /* HeapSort.cpp in Sources */,
 				52AC63CB2A2A3759000C6461 /* BubbleSort.cpp in Sources */,
 				52AC63D62A2B22E1000C6461 /* heap.cpp in Sources */,
 				52AC63C42A2A28BD000C6461 /* SelectionSort.cpp in Sources */,
@@ -160,6 +159,7 @@
 				52AC63CD2A2A57DF000C6461 /* InsertSort.cpp in Sources */,
 				52AC63D82A2B3DB5000C6461 /* DepthFirstSearch.cpp in Sources */,
 				52AC63C62A2A28BD000C6461 /* Student.cpp in Sources */,
+				521A84612A2C3CAA00DD2EEA /* HeapSort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
