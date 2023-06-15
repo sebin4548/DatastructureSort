@@ -1,78 +1,72 @@
 #include<iostream>
-// #include "BinarySearchTree.hpp"
-using namespace std;
-
-template<class ItemType>
-struct TreeNode{
-   ItemType info;
-   TreeNode<ItemType>* left;
-   TreeNode<ItemType>* right;
+template <class ItemType>
+struct TreeNode {
+    ItemType info;
+    TreeNode<ItemType> *left;
+    TreeNode<ItemType> *right;
 };
-
-template<class ItemType>
+template <class ItemType>
+void Insert(TreeNode<ItemType> *&tree, ItemType item){
+    if(tree == NULL){
+        tree = new TreeNode<ItemType>;
+        tree->right = NULL;
+        tree->left = NULL;
+        tree->info = item;
+    }
+    else if(item < tree->info){
+        Insert(tree->left, item);
+    }
+    else{
+        Insert(tree->right, item);
+    }
+}
+template <class ItemType>
+void PrintTree(TreeNode<ItemType> *tree){
+    if(tree != NULL){
+        PrintTree(tree->left);
+        std::cout << tree->info << std::endl;
+        PrintTree(tree->right);
+    }
+}
+template <class ItemType>
+void Destroy(TreeNode<ItemType> *&tree){
+    if(tree != NULL){
+        Destroy(tree->left);
+        Destroy(tree->right);
+        delete tree;
+    }
+}
+template <class ItemType>
 class TreeType{
-public:
-   TreeType();
-   ~TreeType();
-   TreeType(const TreeType<ItemType>& originalTree);
-   void operator=(const TreeType<ItemType>& originalTree);
-   void MakeEmpty();
-   bool IsEmpty() const;
-   bool IsFull() const;
-   int GetLength() const;
-   ItemType GetItem(ItemType item, bool& found);
-   void PutItem(ItemType item);
-   void DeleteItem(ItemType item);
+    public:
+        TreeType(){
+            root = NULL;
+        }
+        ~TreeType(){
+            Destroy(root);
+        }
+        
+        // bool IsEmpty();
+        // bool IsFull();
+        // int GetLength();
+        // ItemType GetItem(ItemType item, bool &found);
+        void PutItem(ItemType item){
+            Insert(root, item);
+        }
+        // void DeleteItem(ItemType item);
 
-
-   void Print() const;
-private:
-   TreeNode<ItemType>* root;
+        void Print(){
+            PrintTree(root);
+        }
+    private:
+        TreeNode<ItemType> *root;
 };
-
-template<class ItemType>
-void CopyTree(TreeNode<ItemType>*& copy, const TreeNode<ItemType>* originalTree){
-   if(originalTree == NULL)
-       copy = NULL;
-   else{
-       copy = new TreeNode<ItemType>;
-       copy -> info = originalTree -> info;
-       CopyTree(copy -> left, originalTree -> left);
-       CopyTree(copy -> right, originalTree -> right);
-   }
-}
-template<class ItemType>
-TreeType<ItemType>::TreeType(const TreeType<ItemType>& originalTree){
-   CopyTree(root, originalTree.root);
-}
-
-template<class ItemType>
-void Insert(TreeNode<ItemType>*& ptr, ItemType item){
-   if(ptr == NULL){
-       ptr = new TreeNode<ItemType>;
-       ptr->right = NULL;
-       ptr -> left = NULL;
-       ptr->info = item;
-   }
-   else if(item < ptr ->info)
-       Insert(ptr->left, item);
-   else if(item > ptr-> info)
-       Insert(ptr->right, item);
-}
-
-template<class ItemType>
-void TreeType<ItemType>::PutItem(ItemType item){
-   Insert(root, item);
-}
 int main(){
-   TreeType<int> tree;
-   tree.PutItem(5);
-   tree.PutItem(3);
-   tree.PutItem(4);
-   tree.PutItem(2);
-   tree.PutItem(7);
-   tree.PutItem(6);
-   tree.PutItem(8);
-   tree.Print();
-   return 0;
+    TreeType<int> tree;
+    tree.PutItem(5);
+    tree.PutItem(3);
+    tree.PutItem(4);
+    tree.PutItem(2);
+    tree.Print();
+    return 0;
 }

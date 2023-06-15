@@ -131,19 +131,19 @@ public:
 
 };
 
-int main(){
-    Hash hash;
+// int main(){
+//     Hash hash;
 
 
-    cout<<hash.InsertItem(20);
-    cout<<hash.InsertItem(20);
-    cout<<hash.InsertItem(30)<<endl;
-    cout<<hash.RetrieveItem(30)<<endl;
-    cout<<hash.RetrieveItem(300)<<endl;
-    cout<<hash.RetrieveItem(320)<<endl;
-    cout<<hash.InsertItem(320)<<endl;
-    cout<<hash.RetrieveItem(320)<<endl<<endl;
-    cout<<hash.DeleteItem(320)<<endl;
-    cout<<hash.DeleteItem(320)<<endl;
-}
+//     cout<<hash.InsertItem(20);
+//     cout<<hash.InsertItem(20);
+//     cout<<hash.InsertItem(30)<<endl;
+//     cout<<hash.RetrieveItem(30)<<endl;
+//     cout<<hash.RetrieveItem(300)<<endl;
+//     cout<<hash.RetrieveItem(320)<<endl;
+//     cout<<hash.InsertItem(320)<<endl;
+//     cout<<hash.RetrieveItem(320)<<endl<<endl;
+//     cout<<hash.DeleteItem(320)<<endl;
+//     cout<<hash.DeleteItem(320)<<endl;
+// }
 
