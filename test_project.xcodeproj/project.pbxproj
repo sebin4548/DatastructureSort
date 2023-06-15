@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		521A84612A2C3CAA00DD2EEA /* HeapSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 521A84602A2C3CAA00DD2EEA /* HeapSort.cpp */; };
 		521A84632A2C42BE00DD2EEA /* MergeSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 521A84622A2C42BE00DD2EEA /* MergeSort.cpp */; };
-		521A84652A2C4A1E00DD2EEA /* BinarySearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 521A84642A2C4A1E00DD2EEA /* BinarySearch.cpp */; };
+		521A846B2A2C5CEB00DD2EEA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 521A84662A2C585400DD2EEA /* main.cpp */; };
+		522D7A812A3B3D9F000291E5 /* Recursion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 522D7A7F2A3B3D9F000291E5 /* Recursion.cpp */; };
+		5272FD652A322AA4009C937E /* HashMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5272FD642A322AA4009C937E /* HashMap.cpp */; };
 		52AC63C32A2A28BD000C6461 /* Swap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63BE2A2A28BD000C6461 /* Swap.cpp */; };
 		52AC63C42A2A28BD000C6461 /* SelectionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63BF2A2A28BD000C6461 /* SelectionSort.cpp */; };
 		52AC63C62A2A28BD000C6461 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63C22A2A28BD000C6461 /* Student.cpp */; };
-		52AC63C92A2A3421000C6461 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63C72A2A3421000C6461 /* main.cpp */; };
 		52AC63CB2A2A3759000C6461 /* BubbleSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63CA2A2A3759000C6461 /* BubbleSort.cpp */; };
 		52AC63CD2A2A57DF000C6461 /* InsertSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63CC2A2A57DF000C6461 /* InsertSort.cpp */; };
 		52AC63D22A2AED8F000C6461 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63D12A2AED8F000C6461 /* QuickSort.cpp */; };
 		52AC63D62A2B22E1000C6461 /* heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63D52A2B22E1000C6461 /* heap.cpp */; };
 		52AC63D82A2B3DB5000C6461 /* DepthFirstSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52AC63D72A2B3DB5000C6461 /* DepthFirstSearch.cpp */; };
+		52F5A9C92A3753E90034E489 /* TreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52F5A9C82A3753E90034E489 /* TreeNode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,19 +38,24 @@
 /* Begin PBXFileReference section */
 		521A84602A2C3CAA00DD2EEA /* HeapSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HeapSort.cpp; sourceTree = "<group>"; };
 		521A84622A2C42BE00DD2EEA /* MergeSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MergeSort.cpp; sourceTree = "<group>"; };
-		521A84642A2C4A1E00DD2EEA /* BinarySearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearch.cpp; sourceTree = "<group>"; };
+		521A84662A2C585400DD2EEA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		521A84682A2C5C8F00DD2EEA /* BS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BS.cpp; sourceTree = "<group>"; };
+		521A84692A2C5C8F00DD2EEA /* BS.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BS.hpp; sourceTree = "<group>"; };
+		522D7A7F2A3B3D9F000291E5 /* Recursion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Recursion.cpp; sourceTree = "<group>"; };
+		522D7A802A3B3D9F000291E5 /* Recursion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Recursion.hpp; sourceTree = "<group>"; };
 		525C0FAC28E95D8E0004FC45 /* test_project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test_project; sourceTree = BUILT_PRODUCTS_DIR; };
+		5272FD642A322AA4009C937E /* HashMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HashMap.cpp; sourceTree = "<group>"; };
 		52AC63BD2A2A28BD000C6461 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		52AC63BE2A2A28BD000C6461 /* Swap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Swap.cpp; sourceTree = "<group>"; };
 		52AC63BF2A2A28BD000C6461 /* SelectionSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectionSort.cpp; sourceTree = "<group>"; };
 		52AC63C12A2A28BD000C6461 /* Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
 		52AC63C22A2A28BD000C6461 /* Student.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
-		52AC63C72A2A3421000C6461 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		52AC63CA2A2A3759000C6461 /* BubbleSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BubbleSort.cpp; sourceTree = "<group>"; };
 		52AC63CC2A2A57DF000C6461 /* InsertSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InsertSort.cpp; sourceTree = "<group>"; };
 		52AC63D12A2AED8F000C6461 /* QuickSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
 		52AC63D52A2B22E1000C6461 /* heap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = heap.cpp; sourceTree = "<group>"; };
 		52AC63D72A2B3DB5000C6461 /* DepthFirstSearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DepthFirstSearch.cpp; sourceTree = "<group>"; };
+		52F5A9C82A3753E90034E489 /* TreeNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TreeNode.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +93,6 @@
 				52AC63C22A2A28BD000C6461 /* Student.cpp */,
 				52AC63BD2A2A28BD000C6461 /* Student.h */,
 				52AC63BE2A2A28BD000C6461 /* Swap.cpp */,
-				52AC63C72A2A3421000C6461 /* main.cpp */,
 				52AC63BF2A2A28BD000C6461 /* SelectionSort.cpp */,
 				52AC63CA2A2A3759000C6461 /* BubbleSort.cpp */,
 				52AC63D12A2AED8F000C6461 /* QuickSort.cpp */,
@@ -94,7 +100,13 @@
 				52AC63D72A2B3DB5000C6461 /* DepthFirstSearch.cpp */,
 				521A84602A2C3CAA00DD2EEA /* HeapSort.cpp */,
 				521A84622A2C42BE00DD2EEA /* MergeSort.cpp */,
-				521A84642A2C4A1E00DD2EEA /* BinarySearch.cpp */,
+				521A84662A2C585400DD2EEA /* main.cpp */,
+				521A84682A2C5C8F00DD2EEA /* BS.cpp */,
+				521A84692A2C5C8F00DD2EEA /* BS.hpp */,
+				5272FD642A322AA4009C937E /* HashMap.cpp */,
+				52F5A9C82A3753E90034E489 /* TreeNode.cpp */,
+				522D7A7F2A3B3D9F000291E5 /* Recursion.cpp */,
+				522D7A802A3B3D9F000291E5 /* Recursion.hpp */,
 			);
 			path = test_project;
 			sourceTree = "<group>";
@@ -126,7 +138,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					525C0FAB28E95D8E0004FC45 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -158,13 +170,15 @@
 			files = (
 				52AC63CB2A2A3759000C6461 /* BubbleSort.cpp in Sources */,
 				52AC63D62A2B22E1000C6461 /* heap.cpp in Sources */,
+				521A846B2A2C5CEB00DD2EEA /* main.cpp in Sources */,
 				521A84632A2C42BE00DD2EEA /* MergeSort.cpp in Sources */,
+				522D7A812A3B3D9F000291E5 /* Recursion.cpp in Sources */,
 				52AC63C42A2A28BD000C6461 /* SelectionSort.cpp in Sources */,
-				521A84652A2C4A1E00DD2EEA /* BinarySearch.cpp in Sources */,
 				52AC63D22A2AED8F000C6461 /* QuickSort.cpp in Sources */,
+				5272FD652A322AA4009C937E /* HashMap.cpp in Sources */,
 				52AC63C32A2A28BD000C6461 /* Swap.cpp in Sources */,
-				52AC63C92A2A3421000C6461 /* main.cpp in Sources */,
 				52AC63CD2A2A57DF000C6461 /* InsertSort.cpp in Sources */,
+				52F5A9C92A3753E90034E489 /* TreeNode.cpp in Sources */,
 				52AC63D82A2B3DB5000C6461 /* DepthFirstSearch.cpp in Sources */,
 				52AC63C62A2A28BD000C6461 /* Student.cpp in Sources */,
 				521A84612A2C3CAA00DD2EEA /* HeapSort.cpp in Sources */,
@@ -207,6 +221,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -265,6 +280,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -287,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -295,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
