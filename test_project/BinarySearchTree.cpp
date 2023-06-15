@@ -47,6 +47,7 @@ class TreeType{
         }
         
         // bool IsEmpty();
+
         // bool IsFull();
         // int GetLength();
         // ItemType GetItem(ItemType item, bool &found);
