@@ -29,11 +29,74 @@ void PrintTree(TreeNode<ItemType> *tree){
     }
 }
 template <class ItemType>
+void GetPredecessor(TreeNode<ItemType> *tree, ItemType &data){
+    while(tree->right != NULL){
+        tree = tree->right;
+    }
+    data = tree->info;
+}
+template <class ItemType>
+void DeleteNode(TreeNode<ItemType> *&tree){
+    ItemType data;
+    TreeNode<ItemType> *tempPtr;
+    tempPtr = tree;
+    if(tree->left == NULL){
+        tree = tree->right;
+        delete tempPtr;
+    }
+    else if(tree->right == NULL){
+        tree = tree->left;
+        delete tempPtr;
+    }
+    else{
+        GetPredecessor(tree->left, data);
+        tree->info = data;
+        Delete(tree->left, data);
+    }
+}
+
+template <class ItemType>
+void Delete(TreeNode<ItemType> *&tree, ItemType item){
+    if(item < tree->info){
+        Delete(tree->left, item);
+    }
+    else if(item > tree->info){
+        Delete(tree->right, item);
+    }
+    else{
+        DeleteNode(tree);
+    }
+}
+template <class ItemType>
 void Destroy(TreeNode<ItemType> *&tree){
     if(tree != NULL){
         Destroy(tree->left);
         Destroy(tree->right);
         delete tree;
+    }
+}
+template <class ItemType>
+void Preorder(TreeNode<ItemType> *tree){
+    if(tree != NULL){
+        std::cout << tree->info << std::endl;
+        Preorder(tree->left);
+        Preorder(tree->right);
+    }
+}
+template <class ItemType>
+void Postorder(TreeNode<ItemType> *tree){
+    if(tree != NULL){
+        Postorder(tree->left);
+        Postorder(tree->right);
+        std::cout << tree->info << std::endl;
+    }
+}
+template <class ItemType>
+void Inorder(TreeNode<ItemType> *tree){
+    if(tree != NULL){
+        Inorder(tree->left);
+        std::cout << tree->info << std::endl;
+        Inorder(tree->right);
     }
 }
 template <class ItemType>
@@ -54,10 +117,15 @@ class TreeType{
         void PutItem(ItemType item){
             Insert(root, item);
         }
-        // void DeleteItem(ItemType item);
+        void DeleteItem(ItemType item){
+            Delete(root, item);
+        }
 
         void Print(){
             PrintTree(root);
+        }
+        void InorderTraversal(){
+            Inorder(root);
         }
     private:
         TreeNode<ItemType> *root;
